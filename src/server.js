@@ -72,7 +72,7 @@ Your key is \`${key}\`,
 You can post to foal.cnwangjie.com/sendMessage to send message to yourself like following code
 
 \`\`\`
-curl -d 'key=${key}&message=test' foal.cnwangjie.com/sendMessage
+curl -d 'key=${key}&message=test' https://foal.cnwangjie.com/sendMessage
 \`\`\`
 `
               sendMessage({parse_mode: 'markdown'}, reply, chatid, (err, body) => {
@@ -89,7 +89,7 @@ Your key is \`${key}\`,
 You can post to foal.cnwangjie.com/sendMessage to send message to yourself like following code
 
 \`\`\`
-curl -d 'key=${key}&message=test' foal.cnwangjie.com/sendMessage
+curl -d 'key=${key}&message=test' https://foal.cnwangjie.com/sendMessage
 \`\`\`
 `
             rds.set(`foal-key-${key}`, chatid, (err) => {
